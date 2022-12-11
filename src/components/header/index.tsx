@@ -75,14 +75,14 @@ function MyHeader() {
             <Tooltip title="Lista de Alunos">
               <Link to="/students-list">
                 <IconButton sx={{ p: 0 }}>
-                  <ListAltIcon />
+                  <ListAltIcon id='listStudentsButton'/>
                 </IconButton>
               </Link>
             </Tooltip>
             <Tooltip title="Adicionar Aluno">
               <Link to="/students-form">
                 <IconButton sx={{ p: 0, mx: 3 }}>
-                  <AddIcon />
+                  <AddIcon id='addStudentButton'/>
                 </IconButton>
               </Link>
             </Tooltip>

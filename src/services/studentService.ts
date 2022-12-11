@@ -3,7 +3,7 @@ import { API } from "./api";
 
 const BASE_PATH = "/students";
 
-export const StudentService  ={
+export const StudentService = {
     findAll: (params?: AxiosRequestConfig) => {
         return API.get(BASE_PATH, params);
     },
@@ -14,7 +14,7 @@ export const StudentService  ={
         return API.post(BASE_PATH, data, params);
     },
     update: (id: number, data: any, params?: AxiosRequestConfig) => {
-    return API.put(`${BASE_PATH}/${id}`, data, params);
+        return API.put(`${BASE_PATH}/${id}`, data, params);
     },
     delete: (id: number, params?: AxiosRequestConfig) => {
         return API.delete(`${BASE_PATH}/${id}`, params);
